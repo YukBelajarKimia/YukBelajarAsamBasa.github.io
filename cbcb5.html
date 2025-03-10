@@ -1,0 +1,188 @@
+<html>
+<head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: #fff;
+        background: #ff9a9e;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-weight: 600;
+	margin: 20px;
+    }
+    section {
+        padding: 30px;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+        width: 80%;
+        max-width: 900px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .option {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 100px;
+        transition: all 0.3s;
+        background: #ffffff;
+        color: #333;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .option:hover {
+        transform: translateY(-3px);
+        background: #ef95a8;
+        color: white;
+    }
+    .correct {
+        background: #28a745 !important;
+        color: white;
+    }
+    .wrong {
+        background: #dc3545 !important;
+        color: white;
+    }
+    .explanation {
+        display: none;
+        margin-top: 10px;
+	margin-bottom: 10px;
+        font-style: italic;
+        background: #f8d7da;
+        color: #721c24;
+        padding: 10px;
+        border-radius: 100px;
+    }
+    #score {
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        display: none;
+    }
+    </style>
+<title>Yuk Cari Tahu Tentang Asam dan Basa ❗❕❗</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<div class="menu-bar">
+<ul>
+<li class="active"><a href="Asam dan Basa versi 2.html"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-book"></i>Materi</a>
+<div class="sub-menu-1">
+		<ul>
+			<li class="hover-me"><a href="#">Teori Asam dan Basa</a><i class="fa fa-angle-right"></i>
+				<div class="sub-menu-2">
+					<ul>
+						<li><a href="anaknya.html">Pengertian</a></li>
+						<li><a href="anaknya1.html">Teori Arrhenius</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="anaknya2.html">pH dan pOH</a></li>
+			<li><a href="anaknya3.html">Penetralan Asam dan Basa</a></li>
+			<li class="hover-me"><a href="anaknya4.html">Garam Hidrolisis</a></li>
+			<li><a href="anaknya5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="#"><i class="fa fa-pencil"></i>Latihan Soal</a>
+<div class="sub-menu-1">
+		<ul>
+			<li><a href="cbcb.html">Teori Asam dan Basa</a></li>	
+			<li><a href="cbcb1.html">pH dan pOH</a></li>
+			<li><a href="cbcb2.html">Penetralan Asam dan Basa</a></li>
+			<li><a href="cbcb3.html">Garam Hidrolisis</a></li>
+			<li><a href="cbcb5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="Mencari Harta Karun.html"><i class="fa fa-gamepad"></i>Games</a></li>
+<li><a href="rumus.html"><i class="fa fa-search"></i>Rumus</a></li>
+</div>
+    <h2><center>📖🤔Latihan Soal Larutan Penyangga🤔📖</center></h2>
+    <section>
+    <div class="question">
+        <h3>1. Larutan penyangga asam tersusun dari...</h3>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga asam terdiri dari asam lemah dan garamnya yang bersifat basa.')">a) Asam kuat dan garamnya</button>
+        <button class="option" onclick="checkAnswer(this, true, 'Larutan penyangga asam terdiri dari asam lemah dan garamnya yang bersifat basa.')">b) Asam lemah dan garamnya</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga asam terdiri dari asam lemah dan garamnya yang bersifat basa.')">c) Basa kuat dan garamnya</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga asam terdiri dari asam lemah dan garamnya yang bersifat basa.')">d) Basa lemah dan garamnya</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>2. Larutan penyangga adalah larutan yang dapat mempertahankan pH meskipun ditambahkan sedikit asam atau basa. Manakah pernyataan berikut yang benar mengenai larutan penyangga?</h3>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga terdiri dari asam lemah dan basa konjugasinya atau basa lemah dan asam konjugasinya. Larutan ini bekerja berdasarkan prinsip kesetimbangan ion, di mana ion dalam larutan mampu menahan perubahan pH ketika ditambahkan sedikit asam atau basa.')">a)  Larutan penyangga bekerja dengan prinsip kesetimbangan ion dalam larutan.</button>
+        <button class="option" onclick="checkAnswer(this, true, 'Larutan penyangga terdiri dari asam lemah dan basa konjugasinya atau basa lemah dan asam konjugasinya. Larutan ini bekerja berdasarkan prinsip kesetimbangan ion, di mana ion dalam larutan mampu menahan perubahan pH ketika ditambahkan sedikit asam atau basa.')">b) Larutan penyangga hanya bisa dibuat dari campuran asam kuat dan garamnya</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga terdiri dari asam lemah dan basa konjugasinya atau basa lemah dan asam konjugasinya. Larutan ini bekerja berdasarkan prinsip kesetimbangan ion, di mana ion dalam larutan mampu menahan perubahan pH ketika ditambahkan sedikit asam atau basa.')">c) Larutan penyangga terbentuk dari asam kuat dan basa kuat dalam jumlah yang sama.</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Larutan penyangga terdiri dari asam lemah dan basa konjugasinya atau basa lemah dan asam konjugasinya. Larutan ini bekerja berdasarkan prinsip kesetimbangan ion, di mana ion dalam larutan mampu menahan perubahan pH ketika ditambahkan sedikit asam atau basa.')">d) Larutan penyangga selalu memiliki pH netral.</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>3. Larutan penyangga asam terbentuk dari 0,2 mol CH₃COOH dan 0,1 mol CH₃COONa. Jika Ka CH₃COOH = 2 × 10⁻⁵, tentukan [H⁺] dalam larutan tersebut!</h3>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 2 x 10⁻⁵ x (0,2/0,1) = 2 x 10^-5 x 2 = 4 x 10⁻⁵ M')">a) 2 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 2 x 10⁻⁵ x (0,2/0,1) = 2 x 10^-5 x 2 = 4 x 10⁻⁵ M')">b) 6 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, true, '[H⁺] = 2 x 10⁻⁵ x (0,2/0,1) = 2 x 10^-5 x 2 = 4 x 10⁻⁵ M')">c)  4 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 2 x 10⁻⁵ x (0,2/0,1) = 2 x 10^-5 x 2 = 4 x 10⁻⁵ M')">d) 1 × 10⁻⁵ M</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>4. Larutan NH₃ 0,3 mol dicampur dengan NH₄Cl 0,2 mol. Jika Kb NH₃ = 1,8 × 10⁻⁵, tentukan [OH⁻] dalam larutan!</h3>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = 1,8 x 10⁻⁵ x (0,3/0,2) = 1,8x 10⁻⁵ x 1,5 = 2,7 x 10⁻⁵ M')">a) 3,2 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, true, '[OH⁻] = 1,8 x 10⁻⁵ x (0,3/0,2) = 1,8x 10⁻⁵ x 1,5 = 2,7 x 10⁻⁵ M')">b) 2,7 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = 1,8 x 10⁻⁵ x (0,3/0,2) = 1,8x 10⁻⁵ x 1,5 = 2,7 x 10⁻⁵ M')">c) 3,6 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = 1,8 x 10⁻⁵ x (0,3/0,2) = 1,8x 10⁻⁵ x 1,5 = 2,7 x 10⁻⁵ M')">d) 4,5 × 10⁻⁵ M</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>5. Jika larutan HF 0,5 mol dicampur dengan NaF 0,25 mol, dan Ka HF = 6 × 10⁻⁴, tentukan [H⁺]!</h3>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 6 x 10⁻⁴ x (0,5/0,25) = 6 x 10⁻⁴ x 2 = 1,2 x 10⁻³ M')">a) 2,4 × 10⁻³ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 6 x 10⁻⁴ x (0,5/0,25) = 6 x 10⁻⁴ x 2 = 1,2 x 10⁻³ M')">b) 3,0 × 10⁻³ M</button>
+        <button class="option" onclick="checkAnswer(this, true, '[H⁺] = 6 x 10⁻⁴ x (0,5/0,25) = 6 x 10⁻⁴ x 2 = 1,2 x 10⁻³ M')">c) 1,2 × 10⁻³ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = 6 x 10⁻⁴ x (0,5/0,25) = 6 x 10⁻⁴ x 2 = 1,2 x 10⁻³ M')">d) 4,0 × 10⁻³ M</button>
+        <p class="explanation"></p>
+    </div>
+    </section>
+   <div id="score"></div>
+    <script>
+        let totalQuestions = 5;
+        let correctAnswers = 0;
+        
+        function checkAnswer(button, isCorrect, explanation) {
+            let options = button.parentElement.querySelectorAll('.option');
+            options.forEach(btn => btn.disabled = true);
+            button.classList.add(isCorrect ? 'correct' : 'wrong');
+            
+            let exp = button.parentElement.querySelector('.explanation');
+            exp.innerText = explanation;
+            exp.style.display = 'block';
+            
+            if (isCorrect) correctAnswers++;
+            
+            if (document.querySelectorAll('.option:disabled').length === totalQuestions * 4) {
+                document.getElementById('score').innerText = `Skor Anda: ${correctAnswers} / ${totalQuestions}`;
+                document.getElementById('score').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    background-color: #ff9a9e;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+.faq {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.faq:hover {
+    background: #ef86a6;
+}
+.faq-content {
+    display: none;
+    padding: 10px 20px;
+    background-color: #f1cbcb;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+marquee {
+    font-size: 20px;
+    color: #da5162;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #ffab91;
+    color: white;
+}
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+</style>
+<title>Yuk Cari Tahu Tentang Asam dan Basa ❗❕❗</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<div class="menu-bar">
+<ul>
+<li class="active"><a href="Asam dan Basa versi 2.html"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-book"></i>Materi</a>
+<div class="sub-menu-1">
+		<ul>
+			<li class="hover-me"><a href="#">Teori Asam dan Basa</a><i class="fa fa-angle-right"></i>
+				<div class="sub-menu-2">
+					<ul>
+						<li><a href="anaknya.html">Pengertian</a></li>
+						<li><a href="anaknya1.html">Teori Arrhenius</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="anaknya2.html">pH dan pOH</a></li>
+			<li><a href="anaknya3.html">Penetralan Asam dan Basa</a></li>
+			<li class="hover-me"><a href="anaknya4.html">Garam Hidrolisis</a></li>
+			<li><a href="anaknya5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="#"><i class="fa fa-pencil"></i>Latihan Soal</a>
+<div class="sub-menu-1">
+		<ul>
+			<li><a href="cbcb.html">Teori Asam dan Basa</a></li>	
+			<li><a href="cbcb1.html">pH dan pOH</a></li>
+			<li><a href="cbcb2.html">Penetralan Asam dan Basa</a></li>
+			<li><a href="cbcb3.html">Garam Hidrolisis</a></li>
+			<li><a href="cbcb5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="Mencari Harta Karun.html"><i class="fa fa-gamepad"></i>Games</a></li>
+<li><a href="rumus.html"><i class="fa fa-search"></i>Rumus</a></li>
+</div>
+	<h1>💧pH dan pOH🧪</h1>
+<section>
+<ul>
+	<p text align="justify"> <b>💧pH</b> atau derajat keasaman digunakan untuk menyatakan tingkat keasaman atau kebasaan yang dimiliki oleh suatu larutan. Yang dimaksud "keasaman" adalah konsetrasi ion hidrogen dalam pelarut air. Nilai pH berkisar dari 0 hingga 14. Derajat atau tingkat keasaman larutan bergantung pada konsentrasi H⁺ dalam larutan. Semakin besar konsentrasi ion H⁺ makin asam larutan. 
+	<p text align="justify"> <b>🧪pOH</b> adalah negatif dari logaritma konsentrasi OH⁻ dalam larutan. pOH kadang-kadang digunakan sebagai satuan ukuran konsentrasi ion hidroksida OH⁻. pOH tidak diukur secara independen, namun diturunkan dari pH. Konsentrasi ion hidroksida dalam air berhubungan dengan konsentrasi ion hidrogen berdasarkan persamaan.
+	<p><center><img src="ph dan poh.png" width="40%"></center>
+</section>
+<section>
+	<h2><marquee>📝Contoh Soal📝</marquee></h2>
+	<div class="faq" onclick="toggleFAQ(0)">▶ 💧Tentukan pH dari suatu larutan yang memiliki konsenrasi ion H⁺ sebesar 10⁻⁴ M</div>
+    <ul><div class="faq-content">Jawaban:<br><img src="jawaban ph.png" width="60%"></div></ul>
+
+    <div class="faq" onclick="toggleFAQ(1)">▶ 💧Tentukan pH dari larutan H2SO4 0,005 M</div>
+    <ul><div class="faq-content">Jawaban:<br><img src="jawaban ph1.png" width="60%"></div></ul>
+
+    <div class="faq" onclick="toggleFAQ(2)">▶ 🧪Suatu larutan diketahui memiliki pH sebesar 4,5. Tentukan pOH dari larutan tersebut!</div>
+    <ul><div class="faq-content">Jawaban:<br><img src="jawaban poh.png" width="60%"></div></ul>
+</section>
+<script>
+    function toggleFAQ(index) {
+        let contents = document.querySelectorAll('.faq-content');
+        let arrows = document.querySelectorAll('.faq');
+
+        if (contents[index].style.display === "block") {
+            contents[index].style.display = "none";
+            arrows[index].innerHTML = arrows[index].innerHTML.replace("▼", "▶");
+        } else {
+            contents[index].style.display = "block";
+            arrows[index].innerHTML = arrows[index].innerHTML.replace("▶", "▼");
+        }
+    }
+</script>
+</body>
+</html>

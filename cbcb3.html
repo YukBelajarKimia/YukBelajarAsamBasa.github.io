@@ -1,0 +1,188 @@
+<html>
+<head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: #fff;
+        background: #ff9a9e;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-weight: 600;
+	margin: 20px;
+    }
+    section {
+        padding: 30px;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+        width: 80%;
+        max-width: 900px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .option {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 100px;
+        transition: all 0.3s;
+        background: #ffffff;
+        color: #333;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .option:hover {
+        transform: translateY(-3px);
+        background: #ef95a8;
+        color: white;
+    }
+    .correct {
+        background: #28a745 !important;
+        color: white;
+    }
+    .wrong {
+        background: #dc3545 !important;
+        color: white;
+    }
+    .explanation {
+        display: none;
+        margin-top: 10px;
+	margin-bottom: 10px;
+        font-style: italic;
+        background: #f8d7da;
+        color: #721c24;
+        padding: 10px;
+        border-radius: 100px;
+    }
+    #score {
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        display: none;
+    }
+    </style>
+<title>Yuk Cari Tahu Tentang Asam dan Basa ❗❕❗</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<div class="menu-bar">
+<ul>
+<li class="active"><a href="Asam dan Basa versi 2.html"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-book"></i>Materi</a>
+<div class="sub-menu-1">
+		<ul>
+			<li class="hover-me"><a href="#">Teori Asam dan Basa</a><i class="fa fa-angle-right"></i>
+				<div class="sub-menu-2">
+					<ul>
+						<li><a href="anaknya.html">Pengertian</a></li>
+						<li><a href="anaknya1.html">Teori Arrhenius</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="anaknya2.html">pH dan pOH</a></li>
+			<li><a href="anaknya3.html">Penetralan Asam dan Basa</a></li>
+			<li class="hover-me"><a href="anaknya4.html">Garam Hidrolisis</a></li>
+			<li><a href="anaknya5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="#"><i class="fa fa-pencil"></i>Latihan Soal</a>
+<div class="sub-menu-1">
+		<ul>
+			<li><a href="cbcb.html">Teori Asam dan Basa</a></li>	
+			<li><a href="cbcb1.html">pH dan pOH</a></li>
+			<li><a href="cbcb2.html">Penetralan Asam dan Basa</a></li>
+			<li><a href="cbcb3.html">Garam Hidrolisis</a></li>
+			<li><a href="cbcb5.html">Larutan Penyangga</a></li>
+		</ul>
+</li>
+<li><a href="Mencari Harta Karun.html"><i class="fa fa-gamepad"></i>Games</a></li>
+<li><a href="rumus.html"><i class="fa fa-search"></i>Rumus</a></li>
+</div>
+    <h2><center>📖🤔Latihan Soal Garam Hidrolisis🤔📖</center></h2>
+    <section>
+    <div class="question">
+        <h3>1. Hidrolisis garam terjadi ketika...</h3>
+        <button class="option" onclick="checkAnswer(this, true, 'Hidrolisis garam adalah reaksi antara ion garam dengan air yang menghasilkan ion H₃O⁺ atau OH⁻, yang dapat mengubah pH larutan.')">a) Garam bereaksi dengan air menghasilkan ion H₃O⁺ atau OH⁻</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Hidrolisis garam adalah reaksi antara ion garam dengan air yang menghasilkan ion H₃O⁺ atau OH⁻, yang dapat mengubah pH larutan.')">b) Garam mengalami ionisasi sempurna di dalam air</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Hidrolisis garam adalah reaksi antara ion garam dengan air yang menghasilkan ion H₃O⁺ atau OH⁻, yang dapat mengubah pH larutan.')">c) Garam terbentuk dari reaksi antara asam kuat dan basa kuat</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Hidrolisis garam adalah reaksi antara ion garam dengan air yang menghasilkan ion H₃O⁺ atau OH⁻, yang dapat mengubah pH larutan.')">d) Garam larut dalam air tanpa mengalami perubahan pH</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>2. Garam yang bersifat asam terbentuk dari...</h3>
+        <button class="option" onclick="checkAnswer(this, false, 'Garam yang berasal dari asam kuat dan basa lemah akan mengalami hidrolisis sebagian oleh kationnya, menghasilkan ion H₃O⁺ yang menyebabkan larutan bersifat asam.')">a) Asam kuat dan basa kuat</button>
+        <button class="option" onclick="checkAnswer(this, true, 'Garam yang berasal dari asam kuat dan basa lemah akan mengalami hidrolisis sebagian oleh kationnya, menghasilkan ion H₃O⁺ yang menyebabkan larutan bersifat asam.')">b) Asam kuat dan basa lemah</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Garam yang berasal dari asam kuat dan basa lemah akan mengalami hidrolisis sebagian oleh kationnya, menghasilkan ion H₃O⁺ yang menyebabkan larutan bersifat asam.')">c) Asam lemah dan basa kuat</button>
+        <button class="option" onclick="checkAnswer(this, false, 'Garam yang berasal dari asam kuat dan basa lemah akan mengalami hidrolisis sebagian oleh kationnya, menghasilkan ion H₃O⁺ yang menyebabkan larutan bersifat asam.')">d) Asam lemah dan basa lemah dengan Ka < Kb</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>3. Garam NaF terbentuk dari asam lemah HF (Ka = 5 × 10⁻⁴) dan basa kuat NaOH. Jika konsentrasi garam 0,05 M, tentukan [OH⁻]!</h3>
+        <button class="option" onclick="checkAnswer(this, true, '[OH⁻] = √((10⁻¹⁴ × 0,05) / (5 × 10⁻⁴)) = √(5 × 10⁻¹⁶ / 5 × 10⁻⁴) = √(10⁻¹²) = 1 × 10⁻⁶ M')">a) 1 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,05) / (5 × 10⁻⁴)) = √(5 × 10⁻¹⁶ / 5 × 10⁻⁴) = √(10⁻¹²) = 1 × 10⁻⁶ M')">b) 1,2 × 10⁻⁵ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,05) / (5 × 10⁻⁴)) = √(5 × 10⁻¹⁶ / 5 × 10⁻⁴) = √(10⁻¹²) = 1 × 10⁻⁶ M')">c) 8,3 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,05) / (5 × 10⁻⁴)) = √(5 × 10⁻¹⁶ / 5 × 10⁻⁴) = √(10⁻¹²) = 1 × 10⁻⁶ M')">d) 7,5 × 10⁻⁶ M</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>4.Garam NH₄NO₃ berasal dari asam kuat HNO₃ dan basa lemah NH₃ (Kb = 1,8 × 10⁻⁵). Jika konsentrasi NH₄NO₃ = 0,05 M, tentukan [H⁺]!</h3>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = √((10⁻¹⁴ × 0,05) / (1,8 × 10⁻⁵)) = √(5 × 10⁻¹⁶ / 1,8 × 10⁻⁵) = √(2,8 × 10⁻¹¹) ≈ 5,3 × 10⁻⁶ M')">a) 4,8 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = √((10⁻¹⁴ × 0,05) / (1,8 × 10⁻⁵)) = √(5 × 10⁻¹⁶ / 1,8 × 10⁻⁵) = √(2,8 × 10⁻¹¹) ≈ 5,3 × 10⁻⁶ M')">b) 6,2 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[H⁺] = √((10⁻¹⁴ × 0,05) / (1,8 × 10⁻⁵)) = √(5 × 10⁻¹⁶ / 1,8 × 10⁻⁵) = √(2,8 × 10⁻¹¹) ≈ 5,3 × 10⁻⁶ M')">c) 7,1 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, true, '[H⁺] = √((10⁻¹⁴ × 0,05) / (1,8 × 10⁻⁵)) = √(5 × 10⁻¹⁶ / 1,8 × 10⁻⁵) = √(2,8 × 10⁻¹¹) ≈ 5,3 × 10⁻⁶ M')">d) 5,3 × 10⁻⁶ M</button>
+        <p class="explanation"></p>
+    </div>
+    <div class="question">
+	<h3>5. Jika garam CH₃COONa dengan konsentrasi 0,2 M memiliki Ka asam asetat = 1,8 × 10⁻⁵, maka tentukan [OH⁻] dalam larutan tersebut!</h3>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,2) / (1,8 × 10⁻⁵)) = √(2 × 10⁻¹⁵ / 1,8 × 10⁻⁵) = √(1,1 × 10⁻¹⁰) ≈ 3,3 × 10⁻⁶ M')">a) 2,8 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,2) / (1,8 × 10⁻⁵)) = √(2 × 10⁻¹⁵ / 1,8 × 10⁻⁵) = √(1,1 × 10⁻¹⁰) ≈ 3,3 × 10⁻⁶ M')">b) 4,2 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, true, '[OH⁻] = √((10⁻¹⁴ × 0,2) / (1,8 × 10⁻⁵)) = √(2 × 10⁻¹⁵ / 1,8 × 10⁻⁵) = √(1,1 × 10⁻¹⁰) ≈ 3,3 × 10⁻⁶ M')">c) 3,3 × 10⁻⁶ M</button>
+        <button class="option" onclick="checkAnswer(this, false, '[OH⁻] = √((10⁻¹⁴ × 0,2) / (1,8 × 10⁻⁵)) = √(2 × 10⁻¹⁵ / 1,8 × 10⁻⁵) = √(1,1 × 10⁻¹⁰) ≈ 3,3 × 10⁻⁶ M')">d) 3,0 × 10⁻⁶ M</button>
+        <p class="explanation"></p>
+    </div>
+    </section>
+    <div id="score"></div>
+    <script>
+        let totalQuestions = 5;
+        let correctAnswers = 0;
+        
+        function checkAnswer(button, isCorrect, explanation) {
+            let options = button.parentElement.querySelectorAll('.option');
+            options.forEach(btn => btn.disabled = true);
+            button.classList.add(isCorrect ? 'correct' : 'wrong');
+            
+            let exp = button.parentElement.querySelector('.explanation');
+            exp.innerText = explanation;
+            exp.style.display = 'block';
+            
+            if (isCorrect) correctAnswers++;
+            
+            if (document.querySelectorAll('.option:disabled').length === totalQuestions * 4) {
+                document.getElementById('score').innerText = `Skor Anda: ${correctAnswers} / ${totalQuestions}`;
+                document.getElementById('score').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
